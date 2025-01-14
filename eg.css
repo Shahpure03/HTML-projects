@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#navlist{
+    display: flex;
+    list-style: none;
+    font-size: 22px;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.container{
+    width: 100vw;
+    height: 100%;
+    overflow-x: none;
+    background-image: linear-gradient(to bottom, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    overflow: auto;
+}
+.navcontainer{
+    width: 100%;
+    display: flex;
+    width: 100vw;
+    height: 58px;
+    animation: 2s linear 1s width;
+    background-image: linear-gradient(to left, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);    align-items: center;
+    justify-content: center;
+    transition:all 4s linear 1s ;
+}
+.navcontainer:hover{
+    width: 100%;
+    background: rgb(63,94,251);
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+#navlogo{
+    font-size: 30px;
+    color: white;
+}
+#navlogo:hover{
+    color:black;
+    /* width: 100%; */
+}
+
+nav{
+    width: 100%;
+}
+#about{
+    color: black;
+    padding: 4px;
+}
+
+a{
+    text-decoration: none;
+}
+.footerbox{
+    width: 100vw;
+    color: azure;
+    background-image: linear-gradient(to left, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);    align-items: center;
+    text-align: center;
+
+}
+.footerbox p{
+    color: azure;
+    font-size: 18px;
+}
+.contentbox{
+    width: 80%;
+    margin: auto;
+    border: 1px solid #b12a5b;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 0px 5px 50px;
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rightbox{
+    position: relative;
+    overflow: hidden;
+}
+.rightbox img{
+    height: 390px;
+    width: 350px;
+    margin: 6px;
+    padding: 3px;
+    border: 2px solid #b12a5b;
+    border-radius: 40px;
+    transition: all 0.15s linear 0s;
+}
+.rightbox:hover{
+    transform: scale(1.06);
+}
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+.leftbox h3{
+    font-size: 22px;
+}
+.leftbox h1{
+    font-size: 40px;
+}
+.rightbox .overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(42, 43, 44, 0.644);
+    transition: all 0.6s linear 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    opacity: 1;
+} 
+.rightbox:hover .overlay{
+    opacity: 0;
+}
+.rightbox .overlay span{
+    color: azure;
+    font-size: 20px;
+
+}
